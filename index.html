@@ -2,10 +2,182 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Test</title>
+  <title>Betonostop Manifest</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.625;
+    }
+  </style>
 </head>
 <body>
-  <h1>Test</h1>
-  <p>Test</p>
+  <h1>Betonostop Manifest ver. 0.1</h1>
+  <h2>1. Wstęp</h2>
+  <p>Wysokie ceny najmu i kupna nieruchomości mieszkalnych w Polsce są problemem wielu Polek i Polaków.
+    Dzięki różnym inicjatywom (w tym licznym oddolnym) m.in. uwolnieniu Rejestru Cen Nieruchomości walka 
+    ze sztucznie zawyżanymi cenami nieruchomości mieszkalnych trwa. 
+    W debacie publicznej coraz częściej pojawia się temat podatku katastralnego lub podatku antyspekulacyjnego.
+    Debacie tej często towarzyszą emocje i uzasadnione obawy, np. czy podatek ten nie spowoduje jeszcze 
+    wyższych cen mieszkań i najmów, a w rezultacie przeniesienia ich na najemców.
+    Jednym z najważniejszych pytań w tym kontekście jest: w jaki sposób należy liczyć taką opłatę? 
+    Niniejszy Manifest ma być odpowiedzią na to pytanie.</p>
+  <p>Manifest ten będzie modyfikowany i uaktualniany w kolejnych wersjach.</p>
+  
+  <h2>2. Główne cele</h2>
+  <ul>
+    <li>Ograniczenie spekulacyjnego inwestowania w nieruchomości. Istnieją różne narzędzia inwestycyjne: 
+      lokaty, obligacje, ETFy, giełda, waluty, metale szlachetne itd. Nieruchomości mieszkalne są zasobem ograniczonym, kluczowym
+      dla funkcjonowania społeczeństwa. Mają zapewniać przestrzeń życiową. Nie powinny być głównym narzędziem inwestycyjnym 
+      i nie powinny podlegać spekulacjom.</li>
+    <li>Poprawa dostępności nieruchomości mieszkalnych oraz obniżenie cen najmu głównie dla rodzin 
+      (szczególnie rodzin wielodzietnych) oraz osób młodych.</li>
+    <li>Poprawa sytuacji demograficznej Polski. Wielkość mieszkania zamieszkałego przez rodziców ma wpły na liczbę ich dzieci. 
+      Nikt nie marzy o wychowywaniu dwójki dzieci w mikrokawalerce.</li>
+    <li>Rozwiązanie ma na celu przyspieszenie i porządkowanie przekazywania praw do nieruchomości z pokolenia na pokolenie.</li>
+    <li>Walka z niesprawiedliwymi i krzywdzącymi pomysłami krążącymi w przestrzeni publicznej.
+      Przykładowo: niesprawiedliwe jest narzucenie opłaty bezwarunkowo od drugiego lub trzeciego mieszkania. 
+      Inaczej wygląda sytuacja singla, inaczej osoby będącej w bezdzietnym małżeństwie lub małżeństwie 
+      wychowującym jedno dziecko, a jeszcze inaczej osoby będącej w małżeństwie i wychowującej trójkę dzieci. 
+    </li>
+    <li>Rozwiązanie powinno bazować na istniejących mechanizmach (np. świadczenie 800+) oraz braku dodatkowych wymagań (np. wyliczania wartości nieruchomości), aby koszt jego wdrożenia był jak najniższy.</li>
+  </ul>
+
+  <h2>3. Główne założenia</h2>
+  <ul>
+    <li>Opłata powinna być zależna od liczby członków najbliższej rodziny. Przez członków najbliższej rodziny należy rozumieć:
+      osobę, która pozostaje w formalnym związku z osobą, dla której wyliczana jest opłata, a także wychowanków, w stosunku do których ma prawo do świadczenia 800+.</li>
+    <li>Opłata dotyczy każdego obywatela posiadającego nieruchomość, ale nie każdy ją poniesie. Jej celem są osoby traktujące nieruchomości wyłącznie jako inwestycje. 
+      W rezultacie opłata ma nie powodować dodatkowego wzrostu cen na rynku nieruchomości i ich najmu.</li>
+    <li>Opłata powinna dotyczyć tylko nieruchomości mieszkalnych. Nie powinna dotyczyć przestrzeni niemieszkalnych, 
+      takich jak: biura, parkingi, garaże, ogródki, lasy, itp.</li>
+    <li>Opłata wyliczana jest niezależnie dla każdego właściciela/współwłaściciela nieruchomości 
+      z uwzględnieniem wszystkich posiadanych nieruchomości.</li>
+    <li>Opłata zawsze dotyczy (w pełnym wymiarze) firm, funduszy inwestycyjnych oraz osoby niebędące obywatelami Polski.</li>
+  </ul>
+
+  <h2>4. Sposób naliczania opłaty</h2>
+  <p>Obliczanie opłaty odbywa się w dwóch krokach:</p>
+  <ol>
+    <li>Określenie od jakiego procenta wszystkich nieruchomości naliczona będzie opłata.</li>
+    <li>Określenie wysokości tej opłaty wg przyjętej metodyki.</li>
+  </ol>
+
+  <h3>Krok 1 - określenie od jakiego procenta wszystkich nieruchomości naliczona będzie opłata</h3>
+  <p>Współczynniki:</p>
+  <p><i>N</i> - współczynnik nieruchomości</p>
+Suma wszystkich nieruchomości analizowanej osoby. W przypadku bycia jedynym właścicielem danej nieruchomości suma jest powiększana o 1. W przypadku bycia współwłaścicielem - proporcjonalnie do posiadanego udziału 
+(współwłasność w wymiarze 1/3 nieruchomości oznacza powiększenie parametru <i>N</i> o 1/3). Każda nieruchomość do jakiej przysługuje analizowanej osobie prawo własności zwiększa współczynnik <i>N</i>. 
+Przy wyliczaniu tego współczynnika nie jest brana pod uwagę wartość nieruchomości. <br/>
+Przykład. Osoba posiada dwa mieszkania, których jest jedynym właścicielem oraz jedno mieszkanie, do którego ma połowiczne prawo własności. Współczynnik <i>N</i> = 1 + 1 + 0,5 = 2,5.<br/>
+  <br/>
+  <p><i>R</i> - współczynnik rodziny</p>
+Początkowa wartość tego współczynnika wynosi zawsze 1. Związek formalny z drugą osobą podnosi <i>R</i> o 1/2. Każde posiadane prawo do świadczenie 800+ zwiększa <i>R</i> o 1/2.<br /> 
+Przykład. Żonaty mężczyzna ma jedno dziecko z pierwszego małżeństwa oraz drugie dziecko z obecnego małżeństwa. Do obu dzieci przysługuje mu prawo do świadczenia 800+ (świadczenie pobiera tylko na drugie dziecko). 
+Współczynnik <i>R</i> = 1 (mężczyzna) + 0,5 (obecna żona) + 0,5 (dziecko z pierwszego małżeństwa) + 0,5 (dziecko z drugiego małżeństwa) = 2,5.<br/>
+  <br/>
+  <p><i>P</i> - współczynnik opłaty</p>
+  Obliczany ze wzoru: <i>P</i> = <i>N</i> - <i>R</i>.  Opłata występuje tylko w przypadku, w którym <i>P</i> > 0.<br/>
+  <br/>
+  <p><i>W</i> - proporcjonalność opłaty</p>
+Obliczana ze wzoru: <i>W</i> = <i>P</i> / <i>N</i>. Określa od jakiego procentu wszystkich nieruchomości należna jest opłata.<br/>
+  Przykład. Osoba nie jest w związku formalnym i nie ma dzieci. Jest jedynym właścicielem dwóch nieruchomości.<br/>
+  Dla danej osoby <i>N</i> = 2, <i>R</i> = 1, <i>P</i> = <i>N</i> - <i>R</i> = 2 - 1 = 1 > 0 (opłata wymagana). <i>W</i> = <i>P</i> / <i>N</i> = 0,5 - opłata jest należna od 50% wszystkich nieruchomości.
+  <h3>Krok 2 - określenie wysokości opłaty</h3>
+Mogą istnieć różne metodyki obliczania wysokości należnej opłaty np. w odniesieniu do wartości nieruchomości, ale ta wymagałaby rejestru cen wszystkich nieruchomości lub systemu ich szacowania. 
+Jeśli ta metoda byłaby preferownana wtedy samo wyliczenie wysokości opłaty byłoby bardzo proste: <i>Suma wartości wszystkich nieruchomości</i> * <i>Współczynnik proporcjaności opłaty</i> wyliczony w Kroku 1.<br/>
+Inna metoda (preferowana przez nas) nie odnosi się do wartości nieruchomości, a do jej metrażu. Zakładamy, że nie jest ważny standard nieruchomości, a to jak dużo przestrzeni jest zabieranej.<br/>
+Przelicznik jest zależny od miejsca, w którym nieruchomość się znajduje:
+<ul>
+  <li>miejscowości do 50 tys. mieszkańców - A zł/m²</li>
+  <li>miejscowości do 100 tys. mieszkańców - B zł/m²</li>
+  <li>miejscowości do 250 tys. mieszkańców - C zł/m²</li>
+  <li>miejscowości do 500 tys. mieszkańców - D zł/m²</li>
+  <li>miejscowości powyżej 500 tys. mieszkańców + gminy pobierające opłatę miejscową ("klimatyczną") - E zł/m²</li>
+</ul>
+Wysokość opłata to suma powierzchni wszystkich nieruchomości przemnożonych przez Współczynnik proporcjonalności opłaty <i>W</i> oraz przelicznik miejsca, w którym się znajdują.<br/>
+Przykład. Analizowana osoba ma zapłacić opłatę od trzech nieruchomości: dom o powierzchni 100m² w małej wsi na Podlasiu, mieszkanie o powierzchni 70m² w Warszawie, mieszkanie o powierzchni 50m² w Zakopanem. 
+Współczynnik proporcjonalności opłaty <i>W</i> wynosi 0,5.<br/>
+Wysokość opłaty = (100 * A + 70 * E + 50 * E) * 0,5<br/>
+Wysokość przeliczników A, B, C, D, E oraz częstotliowość płatności opłaty pozostaje do ustalenia w późniejszym czasie.
+  <h2>5. Przykłady</h2>
+  <p><b>Przykład 1:</b></p>
+   <img src="assets/images/1.png" alt="Przykład 1" height="150" style="margin-left: 100px;"> 
+  <p>Ludzik: nie jest w związku formalnym, nie ma dzieci. Jest jedynym właścicielem jednego mieszkania.<br/>
+    <i>N</i> = 1</br>
+    <i>R</i> = 1</br>
+    <i>P</i> = 1 - 1 = 0 - opłata nie jest wymagana (P &#8815; 0)
+  </p>
+ 
+  <p><b>Przykład 2:</b></p>
+   <img src="assets/images/2.png" alt="Przykład 2" height="150" style="margin-left: 100px;"> 
+  <p>Ludzik: nie jest w związku formalnym, nie ma dzieci. Jest jedynym właścicielem dwóch mieszkań.<br/>
+    <i>N</i> = 1 + 1 = 2</br>
+    <i>R</i> = 1</br>
+    <i>P</i> = 2 - 1 = 1 - opłata jest wymagana (P > 0)<br/>
+    <i>W</i> = 1 / 2 = 0,5</br>
+    Jedno mieszkanie jest w Mielnie (gmina pobierająca opłatę miejscową), ma 48 m², drugie mieszkanie jest w Radomiu (miejscowość do 250 tys. mieszkańców), ma 62 m².</br>
+    Wysokość opłaty = (48 * E + 62 * C) * 0,5
+  </p>
+
+  <p><b>Przykład 3:</b></p>
+   <img src="assets/images/3.png" alt="Przykład 3" height="200" style="margin-left: 100px;"> 
+  <p>Ludzik: jest w związku formalnym, z obecną żoną ma dziecko, ma także dziecko z poprzedniego związku. Do obu dzieci przysługuje mu prawo do świadczenia 800+. Wraz z obecną żoną jest współwłaścicielem domu, ma 50% udziału.<br/>
+    <i>N</i> = 0,5</br>
+    <i>R</i> = 1 + 0,5 + 0,5 + 0,5 = 2,5</br>
+    <i>P</i> = 0,5 - 2,5 = -2 - opłata nie jest wymagana (P &#8815; 0)<br/>
+  </p>
+  <p>Ludziczka: jest w związku formalnym, z obecnym mężem ma dziecko, ma także dziecko z poprzedniego związku. Do obu dzieci przysługuje jej prawo do świadczenia 800+. Wraz z obecnym mężem jest współwłaścicielką domu, ma 50% udziału. Dodatkowo ma też dwa mieszkania, których jest jedyną właścicielką.<br/>
+    <i>N</i> = 0,5 + 1 + 1 = 2,5</br>
+    <i>R</i> = 1 + 0,5 + 0,5 + 0,5 = 2,5</br>
+    <i>P</i> = 2,5 - 2,5 = 0 - opłata nie jest wymagana (P &#8815; 0)<br/>
+  </p>
+
+  <p><b>Przykład 4:</b></p>
+   <img src="assets/images/4.png" alt="Przykład 4" height="200" style="margin-left: 100px;"> 
+  <p>Ludzik: jest w związku formalnym, z obecną żoną ma dziecko, ma także dziecko z poprzedniego związku. Do obu dzieci przysługuje mu prawo do świadczenia 800+. Wraz z obecną żoną jest współwłaścicielem domu, ma 50% udziału. Dodatkowo ma 1/3 udziału w innym mieszkaniu.<br/>
+    <i>N</i> = 0,5 + 0,33 = 0,83</br>
+    <i>R</i> = 1 + 0,5 + 0,5 + 0,5 = 2,5</br>
+    <i>P</i> = 0,83 - 2,5 = -1,67 - opłata nie jest wymagana (P &#8815; 0)<br/>
+  </p>
+  <p>Ludziczka: jest w związku formalnym, z obecnym mężem ma dziecko, ma także dziecko z poprzedniego związku. Do obu dzieci przysługuje jej prawo do świadczenia 800+. Wraz z obecnym mężem jest współwłaścicielką domu, ma 50% udziału.<br/>
+    <i>N</i> = 0,5</br>
+    <i>R</i> = 1 + 0,5 + 0,5 + 0,5 = 2,5</br>
+    <i>P</i> = 0,5 - 2,5 = -2 - opłata nie jest wymagana (P &#8815; 0)<br/>
+  </p>
+
+  <p><b>Przykład 5:</b></p>
+   <img src="assets/images/5.png" alt="Przykład 5" height="200" style="margin-left: 100px;"> 
+  <p>Ludzik: jest w związku formalnym, ma dziecko z poprzedniego związku, do którego przysługuje mu prawo do świadczenia 800+. Wraz z obecną żoną jest współwłaścicielem domu, ma 50% udziału.<br/>
+    <i>N</i> = 0,5</br>
+    <i>R</i> = 1 + 0,5 + 0,5 = 2</br>
+    <i>P</i> = 0,5 - 2 = -1,5 - opłata nie jest wymagana (P &#8815; 0)<br/>
+  </p>
+  <p>Ludziczka: jest w związku formalnym, ma dziecko z poprzedniego związku, do którego przysługuje jej prawo do świadczenia 800+. Wraz z obecnym mężem jest współwłaścicielką domu, ma 50% udziału. Dodatkowo ma też dwa mieszkania, których jest jedyną właścicielką.<br/>
+    <i>N</i> = 0,5 + 1 + 1 = 2,5</br>
+    <i>R</i> = 1 + 0,5 + 0,5 = 2</br>
+    <i>P</i> = 2,5 - 2 = 0,5 - opłata jest wymagana (P > 0)<br/>
+    <i>W</i> = 0,5 / 2,5 = 0,2</br>
+    Dom jest w Nowym Targu (miejscowość do 50 tys. mieszkańców), ma 150 m², jedno mieszkanie jest w Katowicach (miejscowość do 500 tys. mieszkańców), ma 80 m², drugie mieszkanie jest w Zakopanem (gmina pobierająca opłatę miejscową), ma 70 m².</br>
+    Wysokość opłaty = (150 * A + 80 * D + 70 * E) * 0,2
+  </p>
+
+  <p><b>Przykład 6:</b></p>
+   <img src="assets/images/6.png" alt="Przykład 6" height="200" style="margin-left: 100px;"> 
+  <p>Ludzik: jest w związku formalnym, z żoną ma dwójke dzieci, do których przysługuje mu prawo do świadczenia 800+. Wraz z żoną jest współwłaścicielem czterech mieszkań, we wszystkich ma 50% udziału.<br/>
+    <i>N</i> = 0,5 + 0,5 + 0,5 + 0,5 = 2</br>
+    <i>R</i> = 1 + 0,5 + 0,5 + 0,5 = 2,5</br>
+    <i>P</i> = 2 - 2,5 = -0,5 - opłata nie jest wymagana (P &#8815; 0)<br/>
+  </p>
+  <p>Ludziczka: jest w związku formalnym, z mężem ma dwójkę dzieci, do których przysługuje jej prawo do świadczenia 800+. Wraz z mężem jest współwłaścicielką czterech mieszkań, we wszystkich ma 50% udziału.<br/>
+    <i>N</i> = 0,5 + 0,5 + 0,5 + 0,5 = 2</br>
+    <i>R</i> = 1 + 0,5 + 0,5 + 0,5 = 2,5</br>
+    <i>P</i> = 2 - 2,5 = -0,5 - opłata nie jest wymagana (P &#8815; 0)<br/>
+  </p>
+
+  <h2>6. Podsumowanie</h2>
+Dziękujemy wszystkim, którzy postanowili zapoznać się z treścią tego manifestu. Mamy nadzieję, że proponowane tu rozwiązanie skłoni do rozmyśleń, analiz i dyskusji. Prosimy o komentarze i ocenę pomysłu. Manifest będzie modyfikowany i uaktualniany w kolejnych wersjach.
+  <h2>7. Kontakt</h2>
+  <p>twitterek (obecnie zwany x): <a href="https://x.com/betonostop" style="text-decoration:none; color: black">@betonostop</a></p>
+  <p>betonostop[at]proton.me</p>
 </body>
 </html>
